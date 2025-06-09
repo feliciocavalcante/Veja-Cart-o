@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificar Cartão</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="titulo">
+            Veja se seu cartão <br> <span class="destaque">vazou</span> na internet
+        </h1>
+
+        <div class="cartao">
+            <div class="fita"></div>
+            <div class="cvv-mock">000</div>
+        </div>
+
+        <form class="formulario">
+            <label class="rotulo">Nome no cartão</label>
+            <input type="text" class="campo" placeholder="Nome completo como está no cartão" />
+
+            <label class="rotulo">Número do cartão</label>
+            <input type="text" class="campo" placeholder="1234 5678 9012 3456" />
+
+            <div class="linha-dupla">
+                <div class="coluna">
+                    <label class="rotulo">Data de expiração</label>
+                    <input type="text" class="campo" placeholder="MM" />
+                </div>
+                <div class="coluna">
+                    <label class="rotulo" style="opacity: 0;">Ano</label>
+                    <input type="text" class="campo" placeholder="AA" />
+                </div>
+                <div class="coluna">
+                    <label class="rotulo">CVV</label>
+                    <input type="text" class="campo" placeholder="000" />
+                </div>
+            </div>
+
+
+            <label class="rotulo">Senha do cartão</label>
+            <div class="campo-senha">
+                <input type="password" class="campo" placeholder="••••••" />
+                <span class="icone-olho"><i class="fa-regular fa-eye"></i></span>
+            </div>
+
+            <button type="submit" class="botao">Verificar</button>
+            <p class="aviso">*É verdadeiro este site</p>
+        </form>
+    </main>
+</body>
+
+</html>

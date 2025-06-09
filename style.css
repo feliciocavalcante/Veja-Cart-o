@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 35px 16px;
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  align-items: center;
+}
+
+.titulo {
+  font-size:16px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.destaque {
+  background-color: #374151;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cartao {
+  background-color: #1f2937;
+  width: 90%;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(5, 5, 5, 0.3);
+  position: relative;
+}
+
+.fita {
+  background-color: #374151;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cvv-mock {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #111827;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.rotulo {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.campo {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box; /* garante que padding não estoure */
+}
+
+.linha-dupla {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.linha-dupla .coluna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-senha {
+  position: relative;
+
+}
+
+.icone-olho {
+  position: absolute;
+  top: 50%;
+  right: 16px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+.botao {
+  background-color: #6366f1;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%; /* botão ocupa a mesma largura dos inputs */
+  box-sizing: border-box;
+}
+
+.botao:hover {
+  background-color: #4f46e5;
+}
+
+.aviso {
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.6;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .linha-dupla {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .linha-dupla .MM,
+  .linha-dupla .AA,
+  .linha-dupla .CVV {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .icone-olho {
+    left: auto;
+    right: 16px;
+  }
+
+  .botao {
+    width: 100%;
+  }
+}
+
