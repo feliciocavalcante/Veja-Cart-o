@@ -37,6 +37,13 @@ O layout se adapta automaticamente a telas menores. No mobile:
 - O ícone do olho é corretamente reposicionado
 
 ---
+## 📸 Captura de Tela
 
-## 📁 Estrutura do Projeto
+> ![veja-cartão](https://github.com/user-attachments/assets/6501f669-733e-472d-8413-09703ddf059a)
+
+
+## 📱 Modo Mobile
+> ![mobile](https://github.com/user-attachments/assets/6c7ccee0-f4f8-4bb6-9e95-4cb4b8686aaf)
+
+
 
